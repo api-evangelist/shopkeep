@@ -1,7 +1,30 @@
 aid: shopkeep
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shopkeep.png
 name: Shopkeep
-description: Shopkeep is a company surfaced as a portfolio company of canaan-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  ShopKeep was a cloud-based iPad point-of-sale (POS) platform for independent
+  retailers, restaurants, and quick-serve businesses, offering register,
+  inventory, employee management, payments, and analytics. Founded in 2008 and
+  backed by Canaan Partners, ShopKeep was acquired by Lightspeed Commerce in
+  2020 and its product and brand have since been folded into the Lightspeed
+  Retail (S-Series) line. The marketing domain shopkeep.com now redirects to
+  lightspeedhq.com/shopkeep, and support has migrated to
+  shopkeep-support.lightspeedhq.com. ShopKeep never shipped a publicly
+  documented developer API — a private "API beta" existed circa 2015 and the
+  app backend at api.shopkeep.com remains live as a session-authenticated,
+  undocumented internal service. No public OpenAPI, SDKs, developer portal, or
+  API reference are published, so this profile is identity-only.
 url: https://raw.githubusercontent.com/api-evangelist/shopkeep/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +32,37 @@ x-backed-by:
 - canaan-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: lightspeed
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Point of Sale
+- Retail
+- Payments
+- Small Business
+- POS
+- iPad
+- Lightspeed
 apis: []
+common:
+- type: DomainSecurity
+  url: security/shopkeep-domain-security.yml
+- type: Website
+  url: https://www.shopkeep.com
+- type: GitHubOrganization
+  url: https://github.com/shopkeep
+- type: Support
+  url: https://shopkeep-support.lightspeedhq.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
