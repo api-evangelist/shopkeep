@@ -54,6 +54,7 @@ tags:
 - Retail
 - Payments
 - Small Business
+- POS
 - iPad
 - Lightspeed
 tags_raw:
@@ -67,6 +68,11 @@ tags_raw:
 - Lightspeed
 apis: []
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/lightspeed/
+  name: Lightspeed Commerce
+  x-relationship: acquired
+  x-evidence: "Founded in 2008 and backed by Canaan Partners, ShopKeep was acquired by Lightspeed Commerce in 2020 and its product and brand have since been folded into the Lightspeed Retail (S-Series) line."
 - type: DomainSecurity
   url: security/shopkeep-domain-security.yml
 - type: Website
